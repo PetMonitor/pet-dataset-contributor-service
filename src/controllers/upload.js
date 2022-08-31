@@ -78,7 +78,7 @@ function preprocessAndUploadFilesToDrive(file, fileMetadata, strBase64, response
 
     const options = {
         host: process.env.PREPROCESS_SERVICE_HOST || "127.0.0.1",
-        port: process.env.PREPROCESS_SERVICE_PORT || 5000,
+        port: process.env.PREPROCESS_SERVICE_PORT || 5002,
         path: '/api/v0/preprocessed-images',
         method: 'POST',
         headers: {

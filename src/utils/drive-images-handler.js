@@ -31,8 +31,9 @@ function getCredentials() {
             console.log("Couldn't load credentials for Google Drive API");
             return {};
         }
+    } else {
+        return require('../../credentials.json')
     }
-    return {};
 }
 
 /**
